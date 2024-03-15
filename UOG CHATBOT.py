@@ -4,9 +4,11 @@ import src.modules.data_scrape as data_scrape
 
 # In[ ]:
 
-data = data_scrape.Scrape_Data('data/urls.txt')
+# Scraped data in the document data type
+data_in_document_type = data_scrape.Scrape_Data('data/urls.txt')
 
-print(data)
+# The same scraped data in a txt file
+data_in_txt = '/data/training/input.txt'
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
