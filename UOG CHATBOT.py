@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
+import src.modules.data_scrape as data_scrape
 
 # In[ ]:
 
+data = data_scrape.Scrape_Data('data/urls.txt')
+
+print(data)
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
