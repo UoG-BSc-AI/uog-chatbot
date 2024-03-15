@@ -1,1 +1,3 @@
 langchain_community
+playwright
+beautifulsoup4
