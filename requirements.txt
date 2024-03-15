@@ -1,3 +1,4 @@
-langchain_community
+streamlit
+langchain
 playwright
 beautifulsoup4
