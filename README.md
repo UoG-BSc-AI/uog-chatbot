@@ -31,7 +31,7 @@ License information for the project.
 
 1. Clone the repository: `git clone [repository_url]`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run the chatbot: `python src/main.py`
+3. Run the chatbot: `streamlit run src/main.py`
 
 Feel free to explore and adapt the structure to suit the specific needs of your chatbot project. If you have any questions, refer to the documentation or reach out to the project contributors.
 
