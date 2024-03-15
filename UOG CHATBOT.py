@@ -4,7 +4,7 @@ import src.modules.data_scrape as data_scrape
 
 # In[ ]:
 
-# Scraped data in the document data type
+# Scraped website data in the document data type
 data_in_document_type = data_scrape.Scrape_Data('data/urls.txt')
 
 # The same scraped data in a txt file
