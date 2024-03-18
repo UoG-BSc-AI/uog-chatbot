@@ -3,6 +3,19 @@ import spacy
 from transformers import BertTokenizer
 # import torch
 from textblob import TextBlob
+from langchain_community.document_loaders import TextLoader
+from data_scrape import Scrape_Data
+
+# Load dataset that was scraped from UoG Website
+loader = TextLoader("././data/training/input.txt")
+
+# Option 1 - Load data from pre-saved txt
+# Save data into document data type variable
+docs = loader.load()
+
+# Option 2 - Scrape data directly using custom scrape function
+# Save data into document data type variable
+# docs_scraped_directly = Scrape_Data("././data/urls.txt")
 
 def lang_processing(text):
 
