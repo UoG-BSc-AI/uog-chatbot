@@ -1,11 +1,8 @@
-<<<<<<< Updated upstream
-streamlit
-langchain
-playwright
-beautifulsoup4
-=======
 streamlit==1.32.2
 langchain==0.1.12
 playwright==1.42.0
 beautifulsoup4==4.12.2
->>>>>>> Stashed changes
+nltk==3.8.1
+spacy==3.7.2
+transformers
+textblob

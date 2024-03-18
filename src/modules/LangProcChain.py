@@ -1,6 +1,6 @@
 import nltk
 import spacy
-from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import BertTokenizer
 # import torch
 from textblob import TextBlob
 

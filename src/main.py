@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain.llms import OpenAI
-import LangProcChain as bot
+import modules.LangProcChain as bot
 
 """
 
