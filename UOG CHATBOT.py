@@ -68,25 +68,12 @@ def generate_qr_code():
     qr = qrcode.make(qr_data)
     qr.show()
 
-# Create a Tkinter window
-root = tk.Tk()
-root.title("University of Gloucestershire - AI Chat Bot")  # Update window title
-root.geometry("750x600")  # Set window size
 
-# Create a user entry box
-user_entry = tk.Entry(root)
-user_entry.pack(side=tk.TOP, fill=tk.X, padx=5, pady=5)
+
 
 # Create a submit button
 submit_button = tk.Button(root, text="Submit", command=handle_submission)
-submit_button.pack(side=tk.TOP, padx=5, pady=5)
 
-# Create a button to generate and display the QR code
-qr_button = tk.Button(root, text="Show QR Code", command=generate_qr_code)
-qr_button.pack(side=tk.TOP, padx=5, pady=5)
-
-# Bind Enter key press to handle_submission function
-user_entry.bind("<Return>", lambda event=None: handle_submission())
 
 # Load and display the image
 image = Image.open("3.jpeg")
@@ -96,10 +83,6 @@ label.pack()
 
 # Create a scrolled text widget to display conversation
 conversation_text = scrolledtext.ScrolledText(root, wrap=tk.WORD, height=20, font=("Arial", 12))
-conversation_text.pack(expand=True, fill=tk.BOTH)
-
-# Run the Tkinter event loop
-root.mainloop()
 
 
 # In[ ]:

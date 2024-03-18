@@ -1,6 +1,6 @@
 import streamlit as st
 from langchain.llms import OpenAI
-
+import model as bot
 #https://docs.streamlit.io/knowledge-base/tutorials/llm-quickstart
 
 #webpage title
