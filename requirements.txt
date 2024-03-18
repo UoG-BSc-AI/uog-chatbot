@@ -1,4 +1,5 @@
-streamlit
-langchain
-playwright
-beautifulsoup4
+pip install python 3.11.3
+pip install streamlit 1.32.2
+pip install  langchain 0.1.12
+pip install playwright 1.42.0
+pip install beautifulsoup4 4.12.2
