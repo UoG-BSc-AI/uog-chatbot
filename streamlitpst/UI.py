@@ -1,6 +1,7 @@
 import streamlit as st
-from langchain.llms import OpenAI
-import model as bot
+from langchain_community.llms import OpenAI
+#from langchain.llms import OpenAI
+#import model as bot
 #https://docs.streamlit.io/knowledge-base/tutorials/llm-quickstart
 
 #webpage title
@@ -26,3 +27,6 @@ with st.form('form_1'):
     #if submit button pressed and API key is valid:
     if submitted and api_key.startswith('sk-'):
         generate_response(text)
+
+course_button = st.button("Courses 📔", help = "Courses offered at the university.")
+student_help_button = st.button("Student Help 🚆", help = "Talk to someone.")
