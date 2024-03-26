@@ -20,7 +20,7 @@ docs = load_docs_from_jsonl("././data/training/input.json")
 # Save data into document data type variable
 
 #to run all URLs use discovered_urls.txt
-#docs_scraped_directly = Scrape_Data("././data/urls.txt")
+docs_scraped_directly = Scrape_Data("././data/discovered_urls.txt")
 
 def lang_processing(text):
 
