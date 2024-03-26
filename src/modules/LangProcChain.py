@@ -4,18 +4,23 @@ from transformers import BertTokenizer
 # import torch
 from textblob import TextBlob
 from langchain_community.document_loaders import TextLoader
-from data_scrape import Scrape_Data
+from data_scrape import Scrape_Data , load_docs_from_jsonl
 
 # Load dataset that was scraped from UoG Website
-loader = TextLoader("././data/training/input.txt")
+#loader = TextLoader("././data/training/input.txt")
+docs = load_docs_from_jsonl("././data/training/input.json")
+#test :
+#print(docs[0].page_content)
 
 # Option 1 - Load data from pre-saved txt
 # Save data into document data type variable
-docs = loader.load()
+#docs = loader.load()
 
 # Option 2 - Scrape data directly using custom scrape function
 # Save data into document data type variable
-# docs_scraped_directly = Scrape_Data("././data/urls.txt")
+
+#to run all URLs use discovered_urls.txt
+#docs_scraped_directly = Scrape_Data("././data/urls.txt")
 
 def lang_processing(text):
 
