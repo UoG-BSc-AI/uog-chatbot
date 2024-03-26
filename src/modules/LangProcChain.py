@@ -4,7 +4,7 @@ from transformers import BertTokenizer
 # import torch
 from textblob import TextBlob
 from langchain_community.document_loaders import TextLoader
-from data_scrape import Scrape_Data , load_docs_from_jsonl
+from modules.data_scrape import Scrape_Data , load_docs_from_jsonl
 
 # Load dataset that was scraped from UoG Website
 #loader = TextLoader("././data/training/input.txt")
@@ -66,7 +66,7 @@ doc = nlp(text)
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 tokens = tokenizer.tokenize(text)
 
-#nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger')
 pos_tags = nltk.pos_tag(tokens)
 
 print(pos_tags)
