@@ -4,7 +4,7 @@ from transformers import BertTokenizer
 # import torch
 from textblob import TextBlob
 from langchain_community.document_loaders import TextLoader
-from modules.data_scrape import Scrape_Data , load_docs_from_jsonl
+from modules.data_scrape import Scrape_Data, load_docs_from_jsonl
 
 # Load dataset that was scraped from UoG Website
 #loader = TextLoader("././data/training/input.txt")
