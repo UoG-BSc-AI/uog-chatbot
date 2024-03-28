@@ -4,6 +4,7 @@ playwright==1.42.0
 beautifulsoup4==4.12.2
 nltk==3.8.1
 spacy==3.7.2
+spacy-transformers
 transformers
 textblob
 
