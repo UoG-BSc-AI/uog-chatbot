@@ -21,18 +21,13 @@ This repository contains the source code and resources for our chatbot project. 
 - `documentation.md`: Comprehensive documentation for the chatbot project.
 - `api_reference.md`: Documentation for any APIs exposed by the chatbot.
 
-## 📄 README.md
-Essential information about the project, including setup instructions, usage guidelines, and contributors.
-
-## 📄 LICENSE
-License information for the project.
-
 ## Getting Started
 
 1. Clone the repository: `git clone [repository_url]`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the chatbot: `streamlit run src/main.py`
 
-Feel free to explore and adapt the structure to suit the specific needs of your chatbot project. If you have any questions, refer to the documentation or reach out to the project contributors.
+If you want to be part of the project, please reach out to the team or project lead.
+ushahid7@glos.ac.uk
 
 Happy coding! 🤖✨
