@@ -27,7 +27,7 @@ This repository contains the source code and resources for our chatbot project. 
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the chatbot: `streamlit run src/main.py`
 
-If you want to be part of the project, please reach out to the team or project lead.
+If you want to be part of the project, please reach out to the team or product lead
 ushahid7@glos.ac.uk
 
 Happy coding! 🤖✨
