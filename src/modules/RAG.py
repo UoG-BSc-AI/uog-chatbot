@@ -21,15 +21,12 @@ def generate_response(query, retrieved_documents):
     return response
 
 # Example usage
-def main():
+def get_response(query):
     # Load documents from JSON Lines file
-    documents = load_docs_from_jsonl("your_dataset.jsonl")
+    documents = load_docs_from_jsonl("././data/training/input.json")
 
     # Initialize vector store for retrieval
     vector_store = VectorStore(documents)
-
-    # User query
-    query = "What is the capital of France?"
 
     # Retrieve relevant documents
     retrieved_documents = retrieve_documents(query, documents, vector_store)
@@ -39,9 +36,6 @@ def main():
 
     print("Response:", response)
 
-if __name__ == "__main__":
-    main()
 
 
 
-# "././data/training/input.json"
