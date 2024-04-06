@@ -7,5 +7,6 @@ spacy==3.7.2
 spacy-transformers
 transformers
 textblob
-en_core_web_trf
+# en_core_web_trf
+scikit-learn
 
