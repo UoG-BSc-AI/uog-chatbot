@@ -16,11 +16,12 @@ Changes:
 # webpage title
 st.title("UoG Chatbot")
 
-with st.form("form_1"):
-    text = st.text_area("Enter text:", "How do i get an assignment reassessed?")
-    # submitted = boolean if button is clicked
-    submitted = st.form_submit_button("Enter")
-    # if submitted:
-    # run sams model and write the response
-    # response = bot.lang_processing(text)
-    # st.write(response)
+with st.form('form_1'):
+    text = st.text_area('Enter text:', 'How do i get an assignment reassessed?')
+    #submitted = boolean if button is clicked
+    submitted = st.form_submit_button('Enter')
+    #if submitted:
+        #run sams model and write the response
+        #response = bot.lang_processing(text)
+        #st.write(response)
+   
