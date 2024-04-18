@@ -1,4 +1,3 @@
-from langchain.document_loaders import PyPDFDirectoryLoader
 from langchain_community.document_loaders import JSONLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
