@@ -1,27 +1,16 @@
-from langchain.llms import OpenAI
+from src.pipeline.inference import setup
+import textwrap
 
-import streamlit as st
 
-# import modules.LangProcChain as bot
+def main():
+    chain = setup(docs_path="../data/training/input.json")
+    q = "Describe your purpose and background knowledge"
 
-"""
+    while not q.lower() == "quit":
+        response = chain({'query': q})
+        print(textwrap.fill(response['result'], width=100))
+        q = input("What is your query? >> ")
 
-Changes:
-        -generate response done by sams model (lang_processing)
-        -api removed (wasnt sure why we needed it)
-"""
 
-# https://docs.streamlit.io/knowledge-base/tutorials/llm-quickstart
-
-# webpage title
-st.title("UoG Chatbot")
-
-with st.form('form_1'):
-    text = st.text_area('Enter text:', 'How do i get an assignment reassessed?')
-    #submitted = boolean if button is clicked
-    submitted = st.form_submit_button('Enter')
-    #if submitted:
-        #run sams model and write the response
-        #response = bot.lang_processing(text)
-        #st.write(response)
-   
+if __name__ == '__main__':
+    main()
