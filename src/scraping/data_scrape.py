@@ -18,7 +18,6 @@ def main():
 
 
 def Scrape_Data(file_path):
-
     # Open the file in read mode
     with open(file_path, "r", encoding="utf-8") as file:
         # Read all lines from the file into an array, removing newline characters
@@ -66,9 +65,6 @@ def load_docs_from_jsonl(file_path) -> Iterable[Document]:
             obj = Document(**data)
             array.append(obj)
     return array
-
-    # Result
-    # docs_transformed[0].page_content[0:500]
 
 
 # print(docs_transformed[0])
