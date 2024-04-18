@@ -1,5 +1,5 @@
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from typing import (
     List,
@@ -34,6 +34,6 @@ def transform(
 if __name__ == "__main__":
     from load import load
 
-    doc_chunks = load("../data/training/input.json")
+    doc_chunks = load("../../data/training/input.json")
     vector_store = transform(doc_chunks)
     print(type(vector_store))
