@@ -1,6 +1,6 @@
 from src.pipeline.inference import setup
 import textwrap
-
+#from src.streamlit_ui import main as streamlit_main
 
 def main():
     chain = setup(docs_path="../data/training/input.json")
