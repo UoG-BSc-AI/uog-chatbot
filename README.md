@@ -1,6 +1,6 @@
 # Chatbot Project
 
-Download Ollama: https://ollama.com/library/stable-beluga
+Download Ollama: https://ollama.com/
 Run the command from terminal: >ollama run stable-beluga
 
 This repository contains the source code and resources for our chatbot project. The following explains the folder structure:
