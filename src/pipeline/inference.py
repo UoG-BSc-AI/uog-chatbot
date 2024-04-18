@@ -14,6 +14,7 @@ def load_transform(docs_path: str):
 
 
 def setup(docs_path: str):
+    # One can specify a different model at this point. For using OpenAI, you might have todo other imports, please refer to langchain docs.
     llm = Ollama(model="stable-beluga", temperature=0)
     prompt = PromptTemplate.from_template(PROMPT_TEMPLATE)
     retriever = load_transform(docs_path)

@@ -9,22 +9,20 @@ from typing import (
 def load_embedding_model(model_path, normalize_embedding=True):
     return HuggingFaceEmbeddings(
         model_name=model_path,
-        model_kwargs={'device': 'cpu'},
-        encode_kwargs={
-            'normalize_embeddings': normalize_embedding
-        }
+        model_kwargs={"device": "cpu"},
+        encode_kwargs={"normalize_embeddings": normalize_embedding},
     )
 
 
-def create_embeddings(chunks, embedding_model, storing_path='../../data/vector_store'):
+def create_embeddings(chunks, embedding_model, storing_path="../../data/vector_store"):
     vectorstore = FAISS.from_documents(chunks, embedding_model)
     vectorstore.save_local(storing_path)
     return vectorstore
 
 
 def transform(
-        documents: List[Document],
-        model_path: str = 'all-MiniLM-L6-v2',
+    documents: List[Document],
+    model_path: str = "all-MiniLM-L6-v2",
 ):
     embed = load_embedding_model(model_path=model_path)
     vectorstore = create_embeddings(documents, embed)

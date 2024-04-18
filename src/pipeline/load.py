@@ -1,9 +1,6 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
-from typing import (
-    List,
-    Iterable
-)
+from typing import List, Iterable
 import json
 
 
@@ -11,7 +8,7 @@ def load_documents_from_json(path: str) -> List[Document]:
     documents = []
 
     # Load JSON file
-    with open(path, 'r') as file:
+    with open(path, "r") as file:
         data = json.load(file)
 
     # Iterate through each item in the JSON array
@@ -24,13 +21,10 @@ def load_documents_from_json(path: str) -> List[Document]:
 
 
 def split_documents(
-        documents: Iterable[Document],
-        chunk_size: int = 1000,
-        chunk_overlap: int = 20
+    documents: Iterable[Document], chunk_size: int = 1000, chunk_overlap: int = 20
 ) -> List[Document]:
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap
+        chunk_size=chunk_size, chunk_overlap=chunk_overlap
     )
 
     chunks = text_splitter.split_documents(documents=documents)
