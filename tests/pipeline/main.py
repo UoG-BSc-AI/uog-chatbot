@@ -1,9 +1,13 @@
-from src.pipeline.inference import setup
 import textwrap
-#from src.streamlit_ui import main as streamlit_main
+
+from langchain_community.llms import Ollama
+
+from src.pipeline.inference import setup
+
 
 def main():
-    chain = setup(docs_path="../data/training/input.json")
+    llm = Ollama(model="stable-beluga", temperature=0)
+    chain = setup(docs_path="../../data/training/input.json", llm=llm)
     q = "Describe your purpose and background knowledge"
 
     while not q.lower() == "quit":
