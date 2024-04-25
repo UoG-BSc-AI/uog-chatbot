@@ -6,6 +6,7 @@ from src.pipeline.inference import setup
 st.set_page_config(
     page_title="University of Gloucestershire Chatbot",
     page_icon="🎓",
+    layout="wide"
 )
 
 apiKey = st.sidebar.text_input('OpenAI API Key')
