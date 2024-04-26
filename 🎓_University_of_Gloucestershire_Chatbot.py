@@ -18,6 +18,11 @@ apiKey = st.sidebar.text_input('OpenAI API Key')
 if not apiKey.startswith('sk-'):
     st.sidebar.warning('Please enter your OpenAI API key!')
 
+st.sidebar.markdown(
+    "[Documentation](https://app.gitbook.com/o/9jlLuxm72W2Au1NwLdIl/s/ed0ncyToNIzTsfFC6byP/)"
+)
+
+
 def generate_response_openai(prompt):
 
     if not apiKey.startswith('sk-'):
