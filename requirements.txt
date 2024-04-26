@@ -6,5 +6,5 @@ sentence-transformers
 faiss-cpu
 huggingface-hub
 langchain-community
-src
 wheel
+src
