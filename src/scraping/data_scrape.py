@@ -8,7 +8,7 @@ from langchain_community.document_transformers import BeautifulSoupTransformer
 
 def main():
     # Define the path to the discovered URLs text file
-    discovered_urls_file = "././data/discovered_urls.txt"
+    discovered_urls_file = "data\\urls\\discovered_urls.txt"
 
     # Scrape data from discovered URLs
     Scrape_Data(discovered_urls_file)

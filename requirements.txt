@@ -5,4 +5,4 @@ beautifulsoup4==4.12.2
 sentence-transformers
 faiss-cpu
 huggingface-hub
-src
+langchain-community
