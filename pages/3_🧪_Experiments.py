@@ -8,8 +8,8 @@ st.markdown("# Experiments")
 df = pd.read_csv("data/experiments/experiments_queries.csv")
 st.dataframe(df[["Category", "Query"]], hide_index=True)
 
-st.write("""## Ollama - Stable-beluga""")
-st.write("""Input, Output""")
+st.write("""## [Llama3](https://ollama.com/library/llama3)""")
+st.dataframe(df[["Category", "Query"]], hide_index=True)
 
-st.write("""## OpenAI""")
-st.write("""Input, Output""")
+st.write("""## [Stable-beluga](https://ollama.com/library/stable-beluga)""")
+st.dataframe(df[["Category", "Query"]], hide_index=True)
