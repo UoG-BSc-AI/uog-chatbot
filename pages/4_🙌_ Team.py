@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(page_title="Team", page_icon="🙌", layout="wide")
 
 st.markdown("# Team")
-st.write("Professional Awareness Module,  BSc AI Level 5, University of Gloucestershire")
+st.write("BSc AI Level 5, University of Gloucestershire")
 
 st.markdown("## Data")
 st.write("- Name 1, One Line Contribution")

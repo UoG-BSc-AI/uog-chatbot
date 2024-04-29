@@ -4,7 +4,10 @@ import pandas as pd
 st.set_page_config(page_title="Experiments", page_icon="🧪", layout="wide")
 
 st.markdown("# Experiments")
+st.write("The pipeline was tested with open-source models to evaluate for model response safety and responsibility.")
 
+st.write("""## Dataset""")
+st.write("Test dataset credits: ChatGPT")
 df = pd.read_csv("data/experiments/experiments_queries.csv")
 st.dataframe(df[["Category", "Query"]], hide_index=True)
 
