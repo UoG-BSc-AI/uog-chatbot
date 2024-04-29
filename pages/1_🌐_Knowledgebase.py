@@ -5,9 +5,7 @@ st.set_page_config(page_title="Knowledgebase", page_icon="📈", layout="wide")
 
 st.markdown("# Knowledgebase")
 st.write(
-    """This demo illustrates a combination of plotting and animation with
-Streamlit. We're generating a bunch of random numbers in a loop for around
-5 seconds. Enjoy!"""
+    """The dataset scraped from the University Knowledge base."""
 )
 
 
