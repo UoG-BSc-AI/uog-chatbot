@@ -1,9 +1,8 @@
+from typing import List
+
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
-from typing import (
-    List,
-)
 
 
 def load_embedding_model(model_path, normalize_embedding=True):

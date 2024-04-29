@@ -1,7 +1,8 @@
+import json
+from typing import Iterable, List
+
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
-from typing import List, Iterable
-import json
 
 
 def load_documents_from_json(path: str) -> List[Document]:

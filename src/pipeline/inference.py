@@ -1,8 +1,9 @@
-from src.pipeline.load import load
-from src.pipeline.transform import transform
-from src.pipeline.retriever import load_qa_chain
-from src.pipeline.prompts import PROMPT_TEMPLATE
 from langchain.prompts import PromptTemplate
+
+from src.pipeline.load import load
+from src.pipeline.prompts import PROMPT_TEMPLATE
+from src.pipeline.retriever import load_qa_chain
+from src.pipeline.transform import transform
 
 
 def load_transform(docs_path: str):
