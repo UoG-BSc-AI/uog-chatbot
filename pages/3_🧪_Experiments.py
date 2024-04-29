@@ -12,7 +12,7 @@ df = pd.read_csv("data/experiments/experiments_queries.csv")
 st.dataframe(df[["Category", "Query"]], hide_index=True)
 
 st.write("""## [Llama3](https://ollama.com/library/llama3)""")
-df = pd.read_csv("data/experiments/experiments_ollama_stable_beluga.csv")
+df = pd.read_csv("data/experiments/experiments_ollama_llama3.csv")
 df = df.rename(columns={"response": "Model response"})
 st.dataframe(df[["Category", "Query", "Model response"]], hide_index=True)
 
