@@ -10,7 +10,7 @@ st.markdown("## Data")
 st.write("- Robbie Smith, Building UI interface and intergrating models to UI for deployment")
 
 st.markdown("## Product")
-st.write("- Name 2, One Line Contribution")
+st.write("- Lilia Vladova, Team Lead of UI and Developlemt")
 
 st.markdown("## Documentation")
 st.write("- Name 3, One Line Contribution")
